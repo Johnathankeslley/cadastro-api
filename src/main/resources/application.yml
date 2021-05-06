@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: cadastro-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/register
+    username: postgres
+    password: 99433900
+    driver-class-name: org.postgresql.Driver
+
+  #Hibernate
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
